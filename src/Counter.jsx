@@ -5,7 +5,7 @@ import { decCount,incCount } from "./Store/actioncreators";
 function Counter(props){
       console.log(props);
     return (
-        <div className="border border-3 p-3 m-2 border-danger">
+        <div className="border border-2 p-3 m-2 border-warning">
             <h1>Counter:{props.count}</h1>
             <button  class={"me-3 rounded-3"} onClick={()=>{props.dispatch(incCount())}}>Increment</button>
             <button  class={"me-3 rounded-3"} onClick={()=>{props.dispatch(decCount())}}>Decrement</button>
