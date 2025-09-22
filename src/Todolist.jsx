@@ -3,7 +3,7 @@ import  { connect } from 'react-redux'
 
 function Todolist(props){
       console.log("todolist component::",props);
-      var [newtodo,setNewTodo]=React.useState('')
+      var [newtodo,setNewTodo]=React.useState('');
     return (
         <div className="border border-3 p-3 m-2 border-primary">
             <h1>Todolist</h1>
