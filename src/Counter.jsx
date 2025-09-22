@@ -3,7 +3,7 @@ import  { connect } from "react-redux";
 import { decCount,incCount } from "./Store/actioncreators";
 
 function Counter(props){
-      console.log(props)
+      console.log(props);
     return (
         <div className="border border-3 p-3 m-2 border-danger">
             <h1>Counter:{props.count}</h1>
