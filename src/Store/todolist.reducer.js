@@ -44,5 +44,5 @@ export function todoReducer(state=initialState,action){
     });
     return{...state,todos:[...temp]}
    }
-   return state
+   return state;
 }
