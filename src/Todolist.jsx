@@ -15,7 +15,7 @@ function Todolist(props){
                         <li className={todo.status?"text-decoration-line-through":""}>
                             {todo.title}
                             {todo.status && <button className='ms-3 rounded-3' onClick={()=>{props.dispatch({type:'TOGGLE_STATUS',payload:todo.id})}}>Undo</button>}
-                            {!todo.status && <button className='ms-3 rounded-3' onClick={()=>{props.dispatch({type:'TOGGLE_STATUS',payload:todo.id})}}>Delete</button>}
+                            {!todo.status && <button className='ms-3 rounded-3' onClick={()=>{props.dispatch({type:'TOGGLE_STATUS',payload:todo.id})}}>Done</button>}
                             <button class={"ms-3 mb-3 rounded-3"}
                              onClick={()=>{
                                 props.dispatch({type:"DELETE_TODO",payload:todo.id});
