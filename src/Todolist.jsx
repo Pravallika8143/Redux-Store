@@ -33,4 +33,4 @@ function Todolist(props){
 }
 export default connect((store)=>{
     return store.todoReducer
-})(Todolist)
+})(Todolist);
