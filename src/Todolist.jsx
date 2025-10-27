@@ -8,7 +8,7 @@ function Todolist(props){
         <div className="border border-2 p-3 m-2 border-primary">
             <h1>Todolist</h1>
             <input type="text" id="d2" class={"me-3 mb-4"} placeholder="Enter Todo" onChange={(e)=>{setNewTodo(e.target.value)}}/>
-            <button  class={"me-3 rounded-3"} onClick={()=>{props.dispatch({type:'ADD_TODO',payload:newtodo})}}>AddTodo</button>
+            <button  class={"me-3 rounded-3"} onClick={()=>{props.dispatch({type:'ADD_TODO',payload:{title:newtodo}})}}>AddTodo</button>
             <ul>
                 {props.todos.map((todo) => {
                         return (
